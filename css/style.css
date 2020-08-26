@@ -4,7 +4,11 @@ img {
     border-radius: 30px;
 }
 
-nav n p,
+nav {
+    float: right;
+}
+
+p,
 ul {
     margin: 0 auto;
 }
