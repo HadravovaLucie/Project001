@@ -1,0 +1,18 @@
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+p,
+ul {
+    margin: 0 auto;
+}
+
+section {
+    padding: 10vh 0;
+}
+
+.bg-info {
+    background-color: pink;
+}
