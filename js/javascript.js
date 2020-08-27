@@ -1,10 +1,28 @@
-var pocetZbozi = 0
+function clickCounterMinus() { <<
 
-
-function pridatZbozi(){
-    pocetZbozi = pocetZbozi + 1;
+    <
+    HEAD
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) - 1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = localStorage.clickcount;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
 }
 
-if (pocetZbozi == 1 ){ 
-    document.write(pocetZbozi);
+function clickCounterPlus() {
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = localStorage.clickcount;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
 }
